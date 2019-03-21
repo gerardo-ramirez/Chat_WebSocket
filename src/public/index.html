@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Chat socket.io</title>
+</head>
+<body>
+    <header>
+        <div >
+            <h2>Chat con Socket.io</h2>
+        </div>
+    </header>
+    <!--usamos id solo para trabajar con orden js-->
+    <div id="chat-container">
+        <div id="chat-window">
+            <!--putput salida de informacion-->
+
+            <div id="output"></div>
+
+            <!--agregamos las acciones para informar cuando alguien se conecta, o tipea-->
+           
+            <div id="actions"></div>
+        
+        </div>
+
+            <!--colocaremos el mensajede salida el que enviamos y recive el servidor-->
+            <input type="text"  id="username" placeholder="username">
+            <input type="text"  id="message" placeholder="message">
+
+            <button id="send">Send</button>
+
+
+
+
+            
+        </div>
+
+
+    </div>
+
+
+
+
+    <script src="socket.io/socket.io.js" charset="UTF-8"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
